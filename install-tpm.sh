@@ -2,7 +2,7 @@
 
 set -e
 
-if ! pacman -Q tmux &>/dev/null; then
+if ! dpkg -l | grep tmux &>/dev/null; then
   echo "tmux is not installed."
   exit 1
 fi
