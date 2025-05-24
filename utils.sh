@@ -2,7 +2,7 @@
 
 # Function to check if a package is installed
 is_installed() {
-  dpkg -i | grep "$1" &> /dev/null
+  sudo dpkg -i | grep "$1" &> /dev/null
 }
 
 # Function to check if a package is installed

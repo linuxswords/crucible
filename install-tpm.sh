@@ -2,7 +2,7 @@
 
 set -e
 
-if ! dpkg -l | grep tmux &>/dev/null; then
+if ! sudo dpkg -l | grep tmux &>/dev/null; then
   echo "tmux is not installed."
   exit 1
 fi
