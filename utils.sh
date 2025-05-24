@@ -2,7 +2,7 @@
 
 # Function to check if a package is installed
 is_installed() {
-  pacman -Qi "$1" &> /dev/null
+  dpkg -i | grep "$1" &> /dev/null
 }
 
 # Function to check if a package is installed
@@ -23,6 +23,6 @@ install_packages() {
 
   if [ ${#to_install[@]} -ne 0 ]; then
     echo "Installing: ${to_install[*]}"
-    yay -S --noconfirm "${to_install[@]}"
+    sudo apt-get install -y "${to_install[@]}"
   fi
 } 
