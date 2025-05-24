@@ -1,0 +1,20 @@
+[
+    {
+        "name": "nerd-fonts",
+        "type": "extension",
+        "desc": "used by most modern terminal applications",
+        "install": {
+            "type": "manual",
+            "url": "https://www.nerdfonts.com/font-downloads"
+        }
+    },
+    {
+        "name": "bashmarks",
+        "type": "terminal",
+        "desc": "set bookmarks for directories",
+        "install": {
+            "url": "https://github.com/huyng/bashmarks",
+            "instructions": "git clone https: //github.com/huyng/bashmarks.git\ncd bashmarks\n make install\n source ~/.local/bin/bashmarks.sh from within your ~.bash_profile or ~/.bashrc file\n you can now remove the downloaded bashmarks folder which is no longer needed"
+        }
+    }
+]
